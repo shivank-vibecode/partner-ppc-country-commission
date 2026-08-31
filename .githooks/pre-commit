@@ -1,0 +1,15 @@
+#!/bin/sh
+# Scan only staged files (avoid scanning ignored/unrelated paths)
+if ! command -v trufflehog >/dev/null 2>&1; then
+  exit 0
+fi
+tmpdir=$(mktemp -d)
+git diff --cached --name-only -z | while IFS= read -r -d '' f; do
+  [ -f "$f" ] || continue
+  mkdir -p "$tmpdir/$(dirname "$f")"
+  git show ":$f" > "$tmpdir/$f"
+done
+trufflehog filesystem "$tmpdir" --only-verified --fail 2>/dev/null
+code=$?
+rm -rf "$tmpdir"
+exit $code
