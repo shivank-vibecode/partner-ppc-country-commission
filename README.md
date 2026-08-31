@@ -8,9 +8,10 @@ CSV is **not** committed (contains partner user IDs). Place exports under `Partn
 
 - `ppc-partners-2024-01-01-to-2026-08-31.csv`
 
-## Live HTML dashboard
+## HTML dashboard
 
-Open **[index.html](https://shivank-vibecode.github.io/partner-ppc-country-commission/)** (GitHub Pages), or open `index.html` locally in a browser.
+- **Live site:** https://shivank-vibecode.github.io/partner-ppc-country-commission/
+- **File on GitHub:** [`index.html`](./index.html) — download and open locally if needed
 
 ## Dashboard (source)
 
