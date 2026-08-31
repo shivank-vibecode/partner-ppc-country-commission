@@ -20,6 +20,14 @@ CSV is **not** committed (contains partner user IDs). Place exports under `Partn
   `~/.cursor/projects/Users-shivank-Downloads-Cohort/canvases/country-commission-affiliate-acquisition.canvas.tsx`
 - Snapshot in this repo: `dashboards/country-commission-affiliate-acquisition.canvas.tsx`
 
+### Whale split
+
+Toggle **All / Whales / Non-whales** at the top of `index.html`.
+
+- **Whale** = `Commissions USD` ≥ p75 of earning affiliates (currently ≥ ~$962)
+- ~25 whales (all Vietnam) drive ~72% of program commission
+- Non-whale blended CPA50 collapses to near-zero outside thin Vietnam residual
+
 ### Tabs
 
 1. **Vietnam deep dive** — full column walkthrough, LTV inversion, CPA layers  
