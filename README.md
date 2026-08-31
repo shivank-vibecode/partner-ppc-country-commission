@@ -38,9 +38,10 @@ Toggle **All / Whales / Non-whales** at the top of `index.html`.
 
 ### LTV method
 
-From [Deriv Partners](https://deriv.com/partners): Options revenue share up to 45% of Deriv revenue →  
-`Deriv gross LTV ≈ Commission ÷ 0.45`, `net keep ≈ gross × 55%`.  
-CPA caps = net keep × payback share (30% / 50% / 100%).
+**LTV = `Client PnL USD`** from the partner export.  
+**CPA** = LTV per affiliate × payback share (30% / 50% / 100%).
+
+Deriv revenue-share inversion / net keep are not used.
 
 ## Specs & plan
 
